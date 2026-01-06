@@ -34,3 +34,13 @@ PLN Nusantara Power Unit Pembangkitan Kaltim Teluk mendapatkan apresiasi dari Di
 --- (Similarity ~): 0.825 ---
 Direktur Utama PLN Nusantara Power menyatakan bahwa persiapan menjelang Nataru dilaksanakan jauh hari sebelumnya melalui posko siaga dan monitoring 24 jam nonstop oleh karyawan untuk memastikan keandalan pasokan listrik di UP Kaltim Teluk, serta kesiapan operasional pembangkit dalam mendukung kebutuhan energi masyarakat dan industri di Kalimantan.&#10;(Source: plnnusantarapower.co.id press release) :contentReference[oaicite:1]{index=1}
 ```
+
+DDL:
+```
+CREATE DATABASE chat_rag_pln;
+\c chat_rag_pln;
+
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE TABLE rag_test (id serial primary key, content text, embedding vector(1024));
+```
