@@ -42,5 +42,5 @@ CREATE DATABASE chat_rag_pln;
 
 CREATE EXTENSION IF NOT EXISTS vector;
 
-CREATE TABLE rag_test (id serial primary key, content text, embedding vector(1024));
+CREATE TABLE rag_test (id serial primary key, konten text, vektor_ai vector(1024));
 ```
